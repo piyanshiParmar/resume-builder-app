@@ -5,7 +5,7 @@ An interactive **Resume Builder Web App** that empowers users to create, preview
 ---
 
 ## 🔗 Live Demo
-Play the game live here: [Simon Says Game](https://piyanshiparmar.github.io/resume-builder-app/)
+Make the resume live here: [Resume Builder App](https://piyanshiparmar.github.io/resume-builder-app/)
 
 ---
 
