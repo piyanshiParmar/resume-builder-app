@@ -4,6 +4,11 @@ An interactive **Resume Builder Web App** that empowers users to create, preview
 
 ---
 
+## 🔗 Live Demo
+Play the game live here: [Simon Says Game](https://piyanshiparmar.github.io/resume-builder-app/)
+
+---
+
 ## ✨ Features
 - 🔹 **Live Preview** – Resume updates instantly as you fill in details.  
 - 🔹 **Dynamic Sections** – Add or remove multiple entries for Education, Experience, Projects, Skills, and         Achievements.  
@@ -35,3 +40,10 @@ resume-builder/
 ├─ index.html
 ├─ resume.html
 └─ README.md
+
+---
+
+## 🚀 How to Play Locally
+1. Clone the repo:
+```bash
+git clone https://github.com/piyanshiParmar/resume-builder-app.git
