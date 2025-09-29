@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="assets/css/resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-name">
+                <img src="assets/images/curriculum-vitae.png" alt="" id="logo">
+                <div class="logo-text">
+                    <span id="build">Build</span>
+                    <span id="resume">Resume</span>
+                  </div>
+            </a>
+        </div>      
+    </nav>
+    
+    <section class="main-section">
+        <form id="resumeForm">
+            <div class="about-section section-spacing">
+                <h3 class="header">ABOUT SECTION</h3>
+                <div class="border-box">
+                    <div class="form-row ">
+                        <div class="field">
+                          <label for="firstName">First Name</label>
+                          <input id="firstName" name="firstName" type="text" placeholder="e.g. John">
+                        </div>
+                        <div class="field">
+                          <label for="middleName">Middle Name</label>
+                          <input id="middleName" name="middleName" type="text" placeholder="e.g. Herbert">
+                        </div>
+                        <div class="field">
+                          <label for="lastName">Last Name</label>
+                          <input id="lastName" name="lastName" type="text" placeholder="e.g. Doe">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                          <label for="profileImageInput">Your Image</label>
+                          <input id="profileImageInput" name="profileImage" type="file" accept="image/*">
+                        </div>
+                        <div class="field">
+                          <label for="designation">Designation</label>
+                          <input id="designation" name="designation" type="text" placeholder="e.g. Sr. Accountant">
+                        </div>
+                        <div class="field">
+                          <label for="address">Address</label>
+                          <input id="address" name="address" type="text" placeholder="e.g. Lake Street-23">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                          <label for="email">Email</label>
+                          <input id="email" name="email" type="email" placeholder="e.g. johndoe@gmail.com">
+                        </div>
+                        <div class="field">
+                          <label for="phone">Phone No</label>
+                          <input id="phone" name="phone" type="tel" placeholder="e.g. 1234567890">
+                        </div>
+                        <div class="field">
+                          <label for="summary">Summary</label>
+                          <textarea id="summary" name="summary" rows="2" placeholder="Short summary about you..."></textarea>
+                        </div>
+                    </div> 
+                    <div class="form-row">
+                        <div class="field">
+                          <label for="linkedin">Linkedin</label>
+                          <input id="linkedin" name="linkedin" type="url" placeholder="e.g. linkedin.com/in/johndoe">
+                        </div>
+                        <div class="field">
+                          <label for="github">Github</label>
+                          <input id="github" name="github" type="url" placeholder="e.g. github.com/johndoe">
+                        </div>
+                        <div class="field">
+                          <label for="portfolio">Portfolio</label>
+                          <input id="portfolio" name="portfolio" type="url" placeholder="e.g.johndoe.vercel.app">
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+            <div class="education-section">
+                <h3 class="header">EDUCATION</h3> 
+                <div class="border-box">
+                    <div class="form-row">
+                        <div class="field">
+                          <label for="school">School/ College</label>
+                          <input type="text" name="schoolName" class="school">
+                        </div>
+                        <div class="field">
+                            <label for="degree">Degree</label>
+                            <input type="text" name="degree" class="degree">
+                        </div>
+                        <div class="field">
+                            <label for="city">City</label>
+                            <input type="text" name="city" class="city">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="sdate">Start Date</label>
+                            <input type="date" name="startDate" class="sdate">
+                        </div>
+                        <div class="field">
+                            <label for="edate">End Date</label>
+                            <input type="date" name="endDate" class="edate">
+                        </div>
+                        <div class="field">
+                            <label for="pr">PR</label>
+                            <input type="text" name="edu_PR" class="pr">
+                        </div>
+                    </div>
+               </div>
+                <button class="add" type="button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="project-section">
+                <h3 class="header">PROJECTS</h3>
+                <div class="border-box">
+                    <div class="form-row ">
+                        <div class="field">
+                            <label for="pname">Project Name</label>
+                            <input type="text" name="projectName" id="pname">
+                        </div>
+                        <div class="field">
+                            <label for="link">Project Link</label>
+                            <input type="text" name="projectLink" id="link">
+                        </div>
+                        <div class="field">
+                            <label for="pdes">Description</label>
+                            <input type="text" name="project_description" id="pdes">
+                        </div>  
+                    </div>
+                    <div class="form-row ">
+                        <div class="field">
+                            <label for="tech">Tech Stack</label>
+                            <input type="text" name="tech" id="tech">
+                        </div>
+                    </div>
+                </div>
+                    <button class="add" type="button"><i class="fa-solid fa-plus"></i></button>                  
+            </div>
+            <div class="experience-section">
+                <h3 class="header">EXPERIENCE</h3>
+                <div class="border-box">
+                    <div class="form-row ">
+                        <div class="field">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title">
+                        </div>
+                        <div class="field">
+                            <label for="company">Company/Organisation</label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div class="field">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="exp_sdate">Start Date</label>
+                            <input type="date" name="startDate" id="exp_sdate">
+                        </div>
+                        <div class="field">
+                            <label for="exp_edate">End Date</label>
+                            <input type="date" name="endDate" id="exp_edate">
+                        </div>
+                        <div class="field">
+                            <label for="expdes">Description</label>
+                            <input type="text" name="exp_description" id="expdes">
+                        </div>
+                    </div>
+                </div>
+                <button class="add" type="button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="skills-section">
+                <h3 class="header">SKILLS</h3>
+                <div class="border-box">
+                    <div class="form-row two-columns">
+                        <div class="field">
+                            <label for="skill">Skill:</label>
+                            <input type="text" id="skill" placeholder="Enter skill">
+                        </div>
+                        <div class="field">
+                            <label for="level">Level (%):</label>
+                            <input type="number" id="level" placeholder="Enter % (0-100)" min="0" max="100">
+                        </div>
+                    </div>
+                </div>
+                <button class="add" type="button" id="addSkillBtn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>            
+            <div class="achievement-section">
+                <h3 class="header">ACHIEVEMENTS</h3>
+                <div class="border-box">
+                    <div class="form-row two-columns ">
+                        <div class="field">
+                            <label for="atitle">Title</label>
+                            <input type="text" name="achieve_title" id="atitle">
+                        </div>
+                        <div class="field">
+                            <label for="achievedes">Description</label>
+                            <input type="text" name="achieve_description" id="achievedes">
+                        </div>
+                    </div>
+                </div>
+                <button class="add" type="button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="language-section">
+                <h3 class="header">Languages</h3>
+                <div class="border-box">
+                    <div class="form-row ">
+                        <div class="field full-width">
+                            <label for="lang">Languages</label>
+                            <input type="text" name="language" id="lang">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <section class="resume-preview">
+        <div class="resume-box" id="resumeBox">
+            <div class="resume-header">
+                <div class="profile">
+                    <img src="assets/images/profile-image.jpg" alt="">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Piyanshi Parmar</h1>
+                    <h4 class="designation">Customer Service Representative</h4>
+                    <div class="social">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="phone bold">+91 2345678090</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <p class="github">github.com/arjunmehta</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="email">arjun.mehta@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-linkedin"></i>
+                            <p class="linkedin">linkedin.com/in/arjunmehta</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location">Mumbai, Maharashtra, India</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-link"></i>
+                            <p class="portfolio">arjun.dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-content">
+                <div class="left-part">
+                    <div class="about">
+                        <h3>About Me</h3>
+                        <p></p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-info">
+                            <span></span>
+                            <div class="bar">
+                              <div class="fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Achievements</h3>
+                        <div class="achieve-info">
+                            <p class="achieve-name"></p>
+                            <p class="achieve-desc"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="lang">
+                        <h3>Languages</h3>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <div class="experience">
+                        <h3>Experience</h3>
+                        <div class="exp-info">
+                            <p class="head"></p>
+                            <div class="exp-subheader">
+                                <p class="company"></p>
+                                <span class="period"></span>
+                            </div>
+                            <p class="exp-desc"></p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <h3>Projects</h3>
+                        <div class="project-info">
+                            <p class="head"></p>
+                            <p class="tech"><span class="stack"></span> </p>
+                            <p class="pdescription"></p>
+                            <p class="link"></p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="edu-info">
+                            <div class="edu-subheader">
+                                <p class="head"></p>
+                                <span class="pr"></span>
+                            </div>
+                            <p class="edu-date"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="print-section">
+        <div class="print-cv">
+            <button id="downloadBtn" class="print-btn" type="button">Download PDF</button> 
+        </div>
+    </section>
+    <!-- Include dependencies BEFORE your download.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="assets/js/download.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>

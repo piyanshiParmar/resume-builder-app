@@ -1,0 +1,261 @@
+html{
+    background-color: white;
+    overscroll-behavior: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: blanchedalmond;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+#logo{
+    height: 30px;
+    width: 30px;
+    vertical-align: top;
+
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+.logo-text {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+#resume{
+    color: blue;
+    font-weight: 900;
+}
+#build{
+    font-weight: 900;
+    color: black;
+}
+.logo-name:hover {
+    opacity: 0.8;
+}  
+.header{
+    background-color: #EFF2F9;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 660px;
+}
+.heading{
+    /* margin: 0px;
+    padding: 0px; */
+    color: #1A1C6A;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.heading:hover{
+    transform: scale(1.1);
+}
+.tagline {
+    text-align: center; 
+    /* font-size: 1.7rem;  */
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    font-weight: bold;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 20px auto;
+    word-wrap: break-word;
+}
+.info{
+    text-align: center; 
+    max-width: 700px;
+    font-size: 1rem;
+    margin: 20px auto;
+    /* word-wrap: break-word; */
+    overflow-wrap: break-word;
+}
+.header-box {
+    display: inline-block; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #1A91F0;
+    border-radius: 6px;
+    height: 40px;
+    margin-right: 18px;
+    line-height: 40px;
+    color: white;
+    padding: 0 10px; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease; 
+}
+.demo-profile{
+    display: block;
+    height: 368px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 85%;
+}
+.section-1 {
+    background-color: white;
+    /* height: 460px;  */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.section-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.sec-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-img img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+}
+
+.sec-info {
+    flex: 1;
+    padding-top: 45px;
+    padding-right: 45px;
+    margin-left: 25px;
+}
+
+.sec-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.para-info {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.header-box:hover{
+    background-color: white;
+    border: 1.5px solid black;
+    color: black;
+}
+.section-2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:  #EFF2F9;
+    /* height: 280px; */
+    padding: 40px 20px;
+    padding: 30px;
+    gap: 20px;
+}
+.section-2 > div {
+    flex: 1; 
+}
+
+.section-2 img {
+    width: 90px;
+    height: 90px;
+}
+.section-2 h5{
+    color: #1A1C6A;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 0;
+}
+.section-2 p{
+    line-height: 20px;   
+}
+.footer{
+    height: 75px;
+    background-color: #1e2532;
+    color: #656e83;
+    text-align: center;
+    padding-top: 18px;
+}
+.footer-container p span{
+    color: #EFF2F9;
+} 
+
+@media (max-width: 768px) {
+    /* nav {
+        /* flex-direction: column; */
+        /* height: auto;
+        padding: 10px;
+    } */
+    .logo-name {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .logo-text {
+        flex-direction: column;
+      }    
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .tagline,
+    .info {
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .section-container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sec-info {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .sec-img img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .section-2 > div {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .demo-profile {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
